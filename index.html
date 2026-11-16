@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10152f" />
+  <title>Life Star</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark">✦</div>
+      <div><h1>Life Star</h1><p>عالمك، صوتك، وأصدقاؤك</p></div>
+      <span class="online-dot" title="متصل"></span>
+    </header>
+
+    <section class="welcome">
+      <span class="eyebrow">مرحباً بك في عالمك الجديد</span>
+      <h2>اجعل كل لحظة<br><em>تستحق المشاركة</em></h2>
+      <p>تعرّف على أشخاص جدد، شارك في غرف صوتية، واصنع لحظات لا تُنسى.</p>
+      <div class="stars">✦　✧　✦　✧　✦</div>
+    </section>
+
+    <section class="auth-card">
+      <div class="tabs"><button class="tab active" data-tab="login">تسجيل الدخول</button><button class="tab" data-tab="signup">إنشاء حساب</button></div>
+      <form id="auth-form">
+        <label id="name-label" class="hidden">الاسم الظاهر<input id="display-name" placeholder="اكتب اسمك" /></label>
+        <label>البريد الإلكتروني أو رقم الهاتف<input id="identity" required placeholder="example@email.com أو رقم الهاتف" /></label>
+        <label>كلمة المرور<input id="password" type="password" required minlength="6" placeholder="6 أحرف على الأقل" /></label>
+        <div id="signup-extra" class="hidden">
+          <label>تاريخ الميلاد<input id="birthdate" type="date" /></label>
+          <label class="check"><input id="age-ok" type="checkbox" /> أؤكد أن عمري 15 سنة أو أكثر.</label>
+          <label class="check"><input id="terms-ok" type="checkbox" /> أوافق على شروط الاستخدام وسياسة الخصوصية.</label>
+        </div>
+        <button class="primary" type="submit" id="submit-btn">تسجيل الدخول</button>
+      </form>
+      <div class="or"><span>أو تابع باستخدام</span></div>
+      <div class="socials">
+        <button type="button" class="social" data-provider="Google"><b class="google">G</b> Google</button>
+        <button type="button" class="social" data-provider="Facebook"><b class="facebook">f</b> Facebook</button>
+        <button type="button" class="social" data-provider="الهاتف">☎ الهاتف</button>
+      </div>
+      <p id="notice" class="notice" role="status">اختر طريقة الدخول للبدء.</p>
+    </section>
+    <footer>© 2026 Life Star · نحترم خصوصيتك ونلتزم بسلامة مجتمعنا</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
